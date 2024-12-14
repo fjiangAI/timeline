@@ -20,7 +20,7 @@
 
 1. **克隆该项目到本地机器**：
     ```bash
-    git clone https://github.com/fjiangai/timeline.git
+    git clone https://github.com/fjiangAI/timeline.git
     cd timeline
     ```
 
