@@ -1,0 +1,39 @@
+/* motivational-text 动画效果 */
+.motivational-text {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    line-height: 1.5;  /* 增加行间距，确保文本不会重叠 */
+    white-space: nowrap;  /* 确保文本不会换行 */
+    display: block;  /* 保证所有内容都占位 */
+}
+
+/* 每一行的动画 */
+.motivational-line {
+    display: block;
+    opacity: 0;
+    animation: fadeInLine 1s forwards;
+    animation-delay: calc(1s * var(--line-delay));  /* 每行的动画延迟 */
+}
+
+.motivational-word {
+    opacity: 0;
+    animation: fadeInWord 1s forwards;
+    animation-delay: calc(0.1s * var(--index));  /* 每个字逐字显示 */
+}
+
+/* 逐行显示动画 */
+@keyframes fadeInLine {
+    to {
+        opacity: 1;
+    }
+}
+
+/* 逐字显示动画 */
+@keyframes fadeInWord {
+    to {
+        opacity: 1;
+    }
+}
+
